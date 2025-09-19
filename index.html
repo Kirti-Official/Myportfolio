@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #0d021f;
+      color: #f2e6ff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2a003f, #43006b, #2a003f);
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 2px solid #ff4dc4;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #d87eff;
+      text-shadow: 0 0 15px #d87eff, 0 0 30px #ff4dc4;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #c9a0dc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1a012b;
+      padding: 12px;
+      border-bottom: 2px solid #ff4dc4;
+    }
+    nav a {
+      color: #d87eff;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff4dc4;
+      text-shadow: 0 0 10px #ff4dc4;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 25px auto;
+      padding: 25px;
+      background: #1a012b;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(216, 126, 255, 0.3);
+    }
+
+    section {
+      margin-bottom: 35px;
+    }
+    h2 {
+      color: #ff4dc4;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #d87eff;
+      display: inline-block;
+      padding-bottom: 4px;
+      text-shadow: 0 0 10px #ff4dc4;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+
+    img {
+      max-width: 160px;
+      border-radius: 50%;
+      border: 3px solid #d87eff;
+      box-shadow: 0 0 20px #d87eff, 0 0 40px #ff4dc4;
+      margin-bottom: 15px;
+    }
+
+    ul li {
+      margin: 8px 0;
+      padding: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #ff4dc4;
+      list-style: none;
+      color: #f2e6ff;
+    }
+
+    form input, form textarea, form button {
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      background: #2a003f;
+      border: 1px solid #d87eff;
+      color: #fff;
+      border-radius: 6px;
+    }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #ff4dc4;
+      box-shadow: 0 0 12px #ff4dc4;
+    }
+    form button {
+      background: #d87eff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background: #ff4dc4;
+      color: #fff;
+      box-shadow: 0 0 15px #ff4dc4;
+    }
+
+    video, audio, iframe {
+      border: 2px solid #d87eff;
+      border-radius: 8px;
+      box-shadow: 0 0 20px #d87eff;
+      margin: 10px 0;
+      max-width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #1a012b;
+      border-top: 2px solid #ff4dc4;
+      margin-top: 30px;
+      color: #c9a0dc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Profile</h1>
+    <p>Exploring Technology | Creating | Learning</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="kuromitired.jpeg" alt="Profile Picture" align="left">
+      <p>Hello! My name is Kirti Akshaya Rangu. I am a Computer Science student passionate about AI, 
+         machine learning, and full-stack development.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Interests</h2>
+      <ul>
+        <li>💻 Programming (Python, Java, Web Dev)</li>
+        <li>🤖 Artificial Intelligence & Machine Learning</li>
+        <li>🎮 Technology & Creative Projects</li>
+        <li>🏃 Sports</li>
+      </ul>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+      <h3>🎵 Favorite Music</h3>
+      <audio controls>
+        <source src="space1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>🎥 Introduction Video</h3>
+      <video width="500" controls>
+        <source src="intro.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+
+      <h3>🌐 External Content</h3>
+      <iframe width="500" height="280" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <label>
+          <input type="checkbox" name="subscribe"> Subscribe to newsletter
+        </label>
+        <textarea name="message" rows="4" placeholder="Your message..."></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Kirti All rights reserved 2025 </p>
+  </footer>
+
+</body>
+</html>
